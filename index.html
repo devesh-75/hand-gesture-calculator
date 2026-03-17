@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Hand Gesture Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!-- CSS -->
+<link rel="stylesheet" href="style.css">
+
+<!-- ML5 Library -->
+<script src="https://cdn.jsdelivr.net/npm/ml5@0.12.2/dist/ml5.min.js"></script>
+
+
+</head>
+
+<body>
+
+
+<div id="videoBox">
+    <video id="video" autoplay muted playsinline></video>
+</div>
+
+<div id="uiBox">
+    <div class="label">First Number</div>
+    <div class="value" id="a">–</div>
+
+    <div class="label">Operation</div>
+    <div class="value" id="op">–</div>
+
+    <div class="label">Second Number</div>
+    <div class="value" id="b">–</div>
+
+    <div class="label">Result</div>
+    <div class="value" id="result">–</div>
+
+    <div class="hint">
+        Show fingers (0–5)<br><br>
+        Space → lock first number<br>
+        + - * / → choose operation<br>
+        Enter → calculate<br>
+        R → reset
+    </div>
+</div>
+
+<!-- JS -->
+<script src="script.js"></script>
+
+
+</body>
+
+</html>

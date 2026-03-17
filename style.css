@@ -1,0 +1,81 @@
+body {
+margin: 0;
+display: flex;
+height: 100vh;
+background: #0b0b0b;
+color: white;
+font-family: system-ui;
+}
+
+/* Left side - video */
+#videoBox {
+flex: 1;
+background: black;
+}
+
+video {
+width: 100%;
+height: 100%;
+object-fit: cover;
+transform: scaleX(-1);
+}
+
+/* Right side - UI */
+#uiBox {
+flex: 1;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background: #111;
+}
+
+/* Labels */
+.label {
+font-size: 18px;
+opacity: 0.7;
+margin-top: 10px;
+}
+
+/* Values (numbers) */
+.value {
+font-size: 72px;
+margin: 5px 0 15px 0;
+font-weight: bold;
+}
+
+/* Result highlight */
+#result {
+color: #00ffcc;
+}
+
+/* Hint text */
+.hint {
+font-size: 14px;
+opacity: 0.6;
+margin-top: 20px;
+text-align: center;
+line-height: 1.6;
+}
+
+/* Responsive (mobile) */
+@media (max-width: 768px) {
+body {
+flex-direction: column;
+}
+
+
+#videoBox {
+    height: 50%;
+}
+
+#uiBox {
+    height: 50%;
+}
+
+.value {
+    font-size: 48px;
+}
+
+
+}
